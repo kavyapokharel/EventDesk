@@ -2,6 +2,10 @@
 
 EventDesk is an event directory built with AngularJS and a custom WordPress plugin. It separates event publishing from the visitor interface: editors manage events in WordPress, while visitors search and filter events through a responsive directory.
 
+## Preview
+
+![EventDesk interface showing event search, format filters, and event cards](eventdesk-preview.png)
+
 ## Features
 
 - Keyword search across event titles, descriptions, and locations.
