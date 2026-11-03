@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "rendered": "Game-day safety workshop"
+    },
+    "excerpt": {
+      "rendered": "<p>Explore planning and communication for large public gatherings.</p>"
+    },
+    "meta": {
+      "eventdesk_date": "2027-03-12",
+      "eventdesk_location": "Community training center",
+      "eventdesk_format": "In person",
+      "eventdesk_registration": ""
+    },
+    "link": ""
+  },
+  {
+    "id": 2,
+    "title": {
+      "rendered": "Accessible events, better experiences"
+    },
+    "excerpt": {
+      "rendered": "<p>Discuss practical ways to make event information easier to find and use.</p>"
+    },
+    "meta": {
+      "eventdesk_date": "2027-03-19",
+      "eventdesk_location": "Online workshop",
+      "eventdesk_format": "Online",
+      "eventdesk_registration": ""
+    },
+    "link": ""
+  },
+  {
+    "id": 3,
+    "title": {
+      "rendered": "Volunteer coordination lab"
+    },
+    "excerpt": {
+      "rendered": "<p>Practice organizing a volunteer schedule and clear event-day instructions.</p>"
+    },
+    "meta": {
+      "eventdesk_date": "2027-04-03",
+      "eventdesk_location": "Innovation room",
+      "eventdesk_format": "Hybrid",
+      "eventdesk_registration": ""
+    },
+    "link": ""
+  },
+  {
+    "id": 4,
+    "title": {
+      "rendered": "Web publishing clinic"
+    },
+    "excerpt": {
+      "rendered": "<p>Learn to publish clear event pages and maintain useful registration links.</p>"
+    },
+    "meta": {
+      "eventdesk_date": "2027-04-11",
+      "eventdesk_location": "Digital learning studio",
+      "eventdesk_format": "In person",
+      "eventdesk_registration": ""
+    },
+    "link": ""
+  },
+  {
+    "id": 5,
+    "title": {
+      "rendered": "Community technology meetup"
+    },
+    "excerpt": {
+      "rendered": "<p>Share small projects and the decisions behind their design.</p>"
+    },
+    "meta": {
+      "eventdesk_date": "2027-05-01",
+      "eventdesk_location": "Online community room",
+      "eventdesk_format": "Online",
+      "eventdesk_registration": ""
+    },
+    "link": ""
+  },
+  {
+    "id": 6,
+    "title": {
+      "rendered": "Past event: planning roundtable"
+    },
+    "excerpt": {
+      "rendered": "<p>An archived sample event for testing date filters.</p>"
+    },
+    "meta": {
+      "eventdesk_date": "2025-10-10",
+      "eventdesk_location": "Community training center",
+      "eventdesk_format": "Hybrid",
+      "eventdesk_registration": ""
+    },
+    "link": ""
+  }
+]

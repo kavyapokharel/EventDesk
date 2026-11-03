@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EventDesk — Community events</title><link rel="stylesheet" href="eventdesk/assets/style.css"></head><body>
+<div id="eventdesk-root" ng-controller="EventsController as vm" ng-cloak>
+  <header class="ed-hero"><p class="ed-eyebrow">EVENTDESK / COMMUNITY & LEARNING</p>
+    <h1>Make room for<br>what’s next.</h1>
+    <p>Discover workshops, meetups, and conversations worth showing up for.</p>
+    <p class="ed-badge" ng-if="vm.demo">Portfolio demo · fictional events · no registrations collected</p>
+  </header>
+  <main class="ed-main">
+    <div class="ed-toolbar">
+      <label class="ed-search">Find an event<input type="search" ng-model="vm.query" placeholder="Search topic or location"></label>
+      <label>Format<select ng-model="vm.format"><option value="">All formats</option><option>In person</option><option>Online</option><option>Hybrid</option></select></label>
+      <label class="ed-check"><input type="checkbox" ng-model="vm.upcoming">Upcoming only</label>
+      <button type="button" ng-click="vm.reset()">Clear filters</button>
+    </div>
+    <div role="status" aria-live="polite"><p ng-if="vm.loading">Loading events…</p>
+      <p ng-if="!vm.loading && !vm.error">{{vm.visible().length}} events found <span ng-if="vm.note">· {{vm.note}}</span></p>
+    </div>
+    <div role="alert" ng-if="vm.error"><p>{{vm.error}}</p><button type="button" ng-click="vm.load()">Try again</button></div>
+    <div class="ed-grid" ng-if="!vm.loading && !vm.error">
+      <article class="ed-card" ng-repeat="event in vm.visible() track by event.id">
+        <div class="ed-card-top"><span class="ed-format">{{event.format}}</span><time>{{event.date || 'Date to be announced'}}</time></div>
+        <h2 ng-bind="event.title"></h2><p class="ed-location" ng-bind="event.location"></p>
+        <p class="ed-description" ng-bind="event.description"></p>
+        <a ng-if="event.registration" ng-href="{{event.registration}}" target="_blank" rel="noopener noreferrer">Registration details ↗</a>
+        <span ng-if="!event.registration" class="ed-muted">Registration link coming soon</span>
+      </article>
+    </div>
+    <p ng-if="!vm.loading && !vm.error && !vm.visible().length">No events match. Try a different search or clear the filters.</p>
+  </main>
+  <footer class="ed-footer">An independent portfolio project. Not affiliated with USM, NCS4, or Cvent.</footer>
+</div>
+
+<noscript>Enable JavaScript to use the event directory.</noscript>
+<script>window.EventDeskConfig={demo:true,endpoint:'demo/events.json'};</script>
+<script src="eventdesk/assets/angular.min.js"></script><script src="eventdesk/assets/core.js"></script><script src="eventdesk/assets/app.js"></script></body></html>
